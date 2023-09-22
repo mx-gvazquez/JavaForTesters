@@ -4,6 +4,11 @@
 
 - CTRL + D - copia la línea actual
 - **main** - crea el Método completo
+
+> public static void main(String[] args) {
+> 
+> }
+
 - **sout** - crea la salida de texto
 - **fori** - crea ciclos For
 - Shift + F10 - Run program
@@ -465,5 +470,94 @@ Look for a SPECIFIC condition, and DO that.
         //Print "Too big" if number is 100 or more
         //Print "Jordan" if number is 100 or more
 
-### 22 - PENDING
+### 22 - Homework2
+Using Switch statement, print day of the week, depending on a dat number from 1 to 7.
+
+## LOOPS
+
+### 23 - 'For' Loop
+
+Sometimes we need to execute the same block of court a few times for that we can use loops.
+
+Similar to 'if' statement we write 'for', then brackets for condition, then curly brackets that will hold 
+the body of the loop.
+
+    byte pages = 12;
+    for (byte j = 0; j <= pages; j++) {
+        System.out.println(j); // Now we run through all 0 to 'pages'.
+    }
+
+But unlike if statement, the condition is not something simple that returns Boolean.
+
+### 24 - 'While' Loop
+The difference between 'for' a loop and 'while' loop is that in the 'for' loop, the number of iterations to be done **is already known** and is used to obtain a certain result.
+
+Whereas in the 'while' loop, the command runs until a certain condition is reached. Only then the process stop.
+
+If there's no STOP condition, loop will run indefinitely.
+
+#### 'While'
+Check for the condition, then executes the code.
+
+    byte i = 0;
+    while (i < 5){
+        System.out.println(i);
+        i++;                      // Break condition, to avoid infinite Loop.
+    }
+
+#### Do While
+Executes the code, then checks for the condition status if need to continue the loop.
+
+    do {
+        System.out.println(i);
+        i--;
+    } while (i > 0);
+
+### 25 - Break & Continue inside LOOPS
+**Break** interrupt the execution of the loop.
+- It's used to finish the loop earlier.
+- We already used it in 'SWITCH' loop.
+- Usefull when looking for something in a pages list, when found, finish the search.
+
+
+    byte pages = 12;
+    for (byte j = 0; j <= pages; j++) {
+    System.out.println(j); // Now we run through all 0 to 'pages'.
+
+      if (j == 5) {   // Enter here only on condition J == 5
+          System.out.println("STOP");  // Do something
+          break;      // Finishes loop run.
+      }
+    }
+
+**Continue** skips or jumps, am iteration in the loop, then continues with the next.
+- It finishes a specific iteration, and move on with next one.
+
+      byte pages = 12;
+      
+      do {
+          if (pages == 8){
+              System.out.println("No imprimas este número");
+              pages--;    // Make sure to add the counter, to avoid infinite loop.
+                          // Otherwise variable 'pages' don't update and will skip the counter
+                           // and return here forever.
+              continue;
+          }
+          System.out.println(pages);
+          pages--;
+      } while (pages > 3);
+
+### 26 - Try Catch
+Used to prevent and handle 'Exceptions'.
+- Normally an exceptions interrupts our code, by failure.
+- With Try Catch, we can 'handle it', recognize it, and continue.
+
+## Section 6 - Java Methods
+
+### Java Methods
+- Go Inside a Class, but
+- Go Outside the 'main' method.
+- Able to contain a whole code.
+- Are summoned from Inside the Class.
+- Do Have 'Modifiers' and 'Parameters'
 
