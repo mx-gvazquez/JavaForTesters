@@ -10,9 +10,13 @@ public class Operators {
         System.out.println(a * b); //Multiplication
         System.out.println(a / b); //Division
 
+        System.out.println("Add 1 to a = 100, three times in a row");
+
         System.out.println(++a); //Incremental 1
         System.out.println(++a); //Incremental 1
         System.out.println(++a); //Incremental  - 103
+
+        System.out.println("Substract 1 to b = 50, three times in a row");
 
         System.out.println(--b); //Decremental 1
         System.out.println(--b); //Decremental 1
@@ -24,12 +28,19 @@ public class Operators {
 
     //c = c+3;
         c += 3;  // Nueva sintaxis de adición.
-        System.out.println(c);
+        System.out.println(c); // Print c = 10 + 3
 
-        int sum = a + b; // Creamos una nueva variable con base en 2 anteriores (mismo tipo).
+
+        int sum = a + b + c; // Creamos una nueva variable con base en 2 anteriores (mismo tipo).
         System.out.println(sum); //103 + 47
 
-    //Comparison Operators, Boolean response
+        System.out.println("------------------");
+        System.out.println("Add a + b + c is equal to: " + sum);
+
+        System.out.println("------------------");
+        System.out.println("Comparison Operators");
+
+        //Comparison Operators, Boolean response
         System.out.println(a == b); // Is 'a' equal to 'b' ?
         System.out.println(a != b); // Is 'a' not equal to 'b' ?
         System.out.println(a > b); // Is 'a' greater than 'b' ?
@@ -37,9 +48,10 @@ public class Operators {
         System.out.println(a >= b); // Is 'a' greater or equal 'b' ?
         System.out.println(a <= b); // Is 'a' less or equal 'b' ?
 
-    //Logical Operators, Boolean response
+        //Logical Operators, Boolean response
 
         System.out.println("------------------");
+        System.out.println("Logical Operators");
 
         //System.out.println(3 > 2);
         System.out.println(3 > 2 && 10<15); // AND Logical operator - True AND True = True

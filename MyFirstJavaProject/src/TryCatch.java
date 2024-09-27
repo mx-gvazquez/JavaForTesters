@@ -12,6 +12,5 @@ public class TryCatch {
 
         System.out.println("Moving on the next task...");
 
-
     }
 }

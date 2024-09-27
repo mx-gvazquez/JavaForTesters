@@ -22,7 +22,7 @@ public class DataTypesDemo {
 
         // Data type casting - Narrowing - double -> int
         int newIntFromDouble = (int) myDouble;
-        System.out.println(newIntFromDouble); // El resultado pasa de 3.14 a 3.
+        System.out.println(newIntFromDouble); // El resultado se redondea y pasa de 3.14 a 3.
 
     }
 }

@@ -25,7 +25,8 @@ public class Homework2 {
                 System.out.println("Domingo");
                 break;
             default:
-                System.out.println("Número de día incorrecto, no mame, la semana no tiene: " + dia + " días. Se espera un número entre 1 y 7.");
+                System.out.println("Número de día incorrecto, recuerde, la semana no tiene: " + dia + " días. " +
+                        "\n     Se espera un número entre 1 y 7.");
         }
     }
 }

@@ -7,7 +7,8 @@ public class IfElseDemo {
 
 
 /*  // This answer pops a logical error with  ' x = 10 '.
-    // Due to 'isTrue' condition is False, it jumps to else line.
+    // Due to 'isTrue' condition is False (since 10 is NOT greater than 10), it jumps to ELSE line.
+     // Also wrong.
 
         if (isTrue) {
             System.out.println(x + " is greater than 10");

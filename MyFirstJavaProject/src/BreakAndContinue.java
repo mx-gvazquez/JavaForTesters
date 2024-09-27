@@ -21,7 +21,7 @@ public class BreakAndContinue {
 
         do {
             if (pages == 8){
-                System.out.println("No imprimas este número");
+                System.out.println("No imprimas el número: " + pages + " por que me cae mal.");
                 pages--;    // Make sure to add the counter, to avoid infinite loop.
                             // Otherwise variable 'pages' don't update and will skip the counter
                             // and return here forever.

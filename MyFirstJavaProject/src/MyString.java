@@ -1,7 +1,7 @@
 public class MyString {
     public static void main(String[] args) {
-        String hello = "Hola German!"; //Se define una variable tipo String
-        System.out.println(hello);
+        String hello = "Hola German!"; //Se declara e inicializa una variable tipo String
+        System.out.println(hello); // Se instancía.
 // Los datos tipo String son una clase, y pueden invocar métodos
     // Contar elementos
         int stringLength = hello.length();
@@ -19,7 +19,7 @@ public class MyString {
         String stringWithInt = hello + ", this string length is: " + stringLength;
         System.out.println(stringWithInt);
     // Saltos de línea y caracteres especiales
-        String movie = "Mi pelicula favorita es \n \"Deadpool\"";
+        String movie = "Mi película favorita es \n \"Deadpool\"";
         System.out.println(movie);
     }
 }
