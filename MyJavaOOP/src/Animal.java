@@ -1,3 +1,5 @@
+package MyJavaOOP.src;
+
 abstract class Animal {
 
     protected String name; // Changed from Private to protected in order to use it in a child class (Dog)

@@ -1,3 +1,5 @@
+package MyFirstJavaProject.src;
+
 public class SwitchDemo {
     public static void main(String[] args) {
         int mes = 14;

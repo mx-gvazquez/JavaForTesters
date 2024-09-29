@@ -1,3 +1,5 @@
+package MyFirstJavaProject.src;
+
 public class ForLoop {
     public static void main(String[] args) {
         for (byte i = 0; i < 10; i++) {

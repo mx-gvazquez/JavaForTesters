@@ -1,3 +1,5 @@
+package MyFirstJavaProject.src;
+
 public class JavaMethods1 {
 
     public static void main(String[] args) {

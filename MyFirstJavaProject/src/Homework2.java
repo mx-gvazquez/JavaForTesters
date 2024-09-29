@@ -1,3 +1,5 @@
+package MyFirstJavaProject.src;
+
 public class Homework2 {
     public static void main(String[] args) {
     // Using Switch statement, print day of the week, depending on a dat number from 1 to 7.

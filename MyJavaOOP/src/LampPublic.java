@@ -1,3 +1,5 @@
+package MyJavaOOP.src;
+
 public class LampPublic {
 
     public boolean lightStatus = false; //NOW accesible from outside this class, 'Main' class

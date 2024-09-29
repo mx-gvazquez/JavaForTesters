@@ -4,15 +4,38 @@
 ### Java Methods (Sub-Routines or Code Snippets)
 
 - A `Java Method` is the collection of statements that group together to perform an operation.
-- It's a block of code that only runs when it's called or _**instantiated**_. 
-- We can pass 'DATA', known as `PARAMETERS` to a method to run code.
+- It's a block of code that ONLY runs when it's called or _**instantiated**_. 
+- We can pass 'DATA' or feed `Variables`, better known as `PARAMETERS`, to a method to run code.
+
+
 - We use methods to reuse code: 
   - define code ONCE and 
   - use it MANY times.
 
 
 - Methods Go Inside a Class, but
-- Go Outside the 'main' method, usually at bottom.
+- Go Outside the 'main' method, usually at bottom of our *.java file.
+
+>Java Class
+>> `main` method
+>
+>> Custom method
+
+Like this:
+
+````java
+public class JavaMethodsFull {
+
+    public static void main(String[] args) {
+        helloWorld();
+    }
+
+    private static void helloWorld(){
+        System.out.println("Hello, world!");
+    }
+}
+````
+
     - Even can be summoned from another Classes with 'extends' method. (Inheritance)
 - Able to contain a whole code.
 - Are summoned from Inside the Class.
@@ -97,7 +120,7 @@ Now, we can run it as much as many times it's called, or instantiated.
 
 These lines were printed, since these methods were executed from the methods called.
 
-### Java PARAMETERS (Arguments of a Method, or Variables of that Method)
+### Java PARAMETERS (Arguments, or Variables of that Method)
 
 `JavaMethodsFull`
 
@@ -151,8 +174,30 @@ private static void suma(double a, double b){
 }
 ````
 
+---
 - IntelliJ suggests which one to use.
 - HERE it's super usefully the JAVA DOCS comments.
+---
+
+
+There's another level of complexity: `OVERRIDE`
+
+If a method is present in both SuperClass and ChildClass, and happens to share both Name & Arguments, then:
+
+> Which method will be executed?
+
+For that, we use the TAG `@Overrride` just ahead of our 'twin' method.
+
+> We'll see this annotation further in this course, in the `Inheritance` lecture in Section 7, when `Cat.java` extends `Animal.java`.
+
+![img_6.png](img_6.png)
+
+For more info about this, refer to:
+
+https://www.digitalocean.com/community/tutorials/overriding-vs-overloading-in-java#comparing-overriding-and-overloading 
+
+
+
 
 ### Method RETURN type
 

@@ -1,3 +1,5 @@
+package MyFirstJavaProject.src;
+
 public class TryCatch {
     public static void main(String[] args) {
 

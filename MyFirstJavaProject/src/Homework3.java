@@ -1,3 +1,5 @@
+package MyFirstJavaProject.src;
+
 public class Homework3 {
     public static void main(String[] args) {
         // Write a loop, to print numbers in descending order

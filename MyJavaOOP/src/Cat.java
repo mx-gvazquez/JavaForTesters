@@ -1,3 +1,5 @@
+package MyJavaOOP.src;
+
 public class Cat extends Animal{
 
     public Cat(String name, String breed){ // Parameterized Constructor

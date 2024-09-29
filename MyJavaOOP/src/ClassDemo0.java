@@ -1,3 +1,5 @@
+package MyJavaOOP.src;
+
 public class ClassDemo0 {
 
     public int number = 5; //

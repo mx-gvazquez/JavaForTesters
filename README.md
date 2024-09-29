@@ -52,7 +52,17 @@ This is a compilation of Notes form different Java Courses, but mainly from:
 25. `Main1` - Create 4 objects, from 'LampPublic' and 'LampPrivate', since instantiated objects are independent, we 
     managed to change ONE local variable boolean status. The one from the Public class of course.
 
+### MoreJava
 
+#### Section 8 - More Java Features
+
+26. `DateTimeDemo.java` - The **_MAIN_** Class from where we instantiate the method from 'ClassDemo0' Class.
+27. `ArrayListDemo.java`
+28. `MapsDemo.java`
+29. `ListOfMaps.java`
+
+
+---
 
 
 ## Section 1 & 2 - Install JAVA JDK 

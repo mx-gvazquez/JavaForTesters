@@ -1,3 +1,5 @@
+package MyFirstJavaProject.src;
+
 public class MyString {
     public static void main(String[] args) {
         String hello = "Hola German!"; //Se declara e inicializa una variable tipo String
