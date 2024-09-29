@@ -1,6 +1,8 @@
+
 # JavaForTesters
 
-This is the Udemy Course on [Java for Testers](https://softtek.udemy.com/course/java-for-testers-dmitry/) by Dmitry Shyshkin.
+This is a compilation of Notes form different Java Courses, but mainly from:
+- The Udemy Course [Java for Testers](https://udemy.com/course/java-for-testers-dmitry/) by Dmitry Shyshkin.
 
 ## List of codes by section or Project
 
@@ -12,9 +14,9 @@ This is the Udemy Course on [Java for Testers](https://softtek.udemy.com/course/
 #### Section 4 - Data Types
 
 2. **Variables** - DATA TYPES (Primitive / Non-Primitive)
-2. **DataTypesDemo** - Primitive Data Type CASTING - Widening & Narrowing
-3. **MyString** - NON - Primitive Data Types (Strings)
-4. **MyArray** - Non-Primitive - Arrays
+3. **DataTypesDemo** - Primitive Data Type CASTING - Widening & Narrowing
+4. **MyString** - NON - Primitive Data Types (Strings)
+5. **MyArray** - Non-Primitive - Arrays
 
 
 #### Section 5 - Java Basics
@@ -31,6 +33,9 @@ This is the Udemy Course on [Java for Testers](https://softtek.udemy.com/course/
 10. `TryCatch` - We can 'handle' **_exception_**, recognize it, and move on with the rest of the code.
 11. `Homework3` - Count descendent from 50 to 0m in steps of 5.
 12. `Homework4` - Replace letter 'o' for a ZERO '0' in the String 'Hello World!'.
+
+#### Section 5 - Java Methods
+
 13. `JavaMethods1` - Create and instantiate methods, from MAIN method.
 14. `JavaMethodsFull` - Whole set of examples
 15. `Homework5` - Print the average of three numbers.
