@@ -34,7 +34,7 @@ This is a compilation of Notes form different Java Courses, but mainly from:
 11. `Homework3` - Count descendent from 50 to 0m in steps of 5.
 12. `Homework4` - Replace letter 'o' for a ZERO '0' in the String 'Hello World!'.
 
-#### Section 5 - Java Methods
+#### Section 6 - Java Methods
 
 13. `JavaMethods1` - Create and instantiate methods, from MAIN method.
 14. `JavaMethodsFull` - Whole set of examples

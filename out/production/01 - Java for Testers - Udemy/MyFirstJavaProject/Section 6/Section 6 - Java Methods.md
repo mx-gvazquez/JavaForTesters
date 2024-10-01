@@ -1,7 +1,7 @@
 
 ## Section 6 - Java Methods
 
-### Java Methods (Sub-Routines or Code Snippets)
+### 29 - Java Methods (Sub-Routines or Code Snippets)
 
 - A `Java Method` is the collection of statements that group together to perform an operation.
 - It's a block of code that ONLY runs when it's called or _**instantiated**_. 
@@ -36,7 +36,7 @@ public class JavaMethodsFull {
 }
 ````
 
-    - Even can be summoned from another Classes with 'extends' method. (Inheritance)
+- `Methods` can be summoned from another Classes with `extends` method. (**_Inheritance_**)
 - Able to contain a whole code.
 - Are summoned from Inside the Class.
 - Do Have 'Access Modifiers' and 'Parameters'
@@ -90,21 +90,24 @@ Access Modifiers of Methods:
     - ![img.png](img.png)
   
 - **static**
-    - Static methods are the methods in Java that can be called without creating an object of a class.
+    - Static methods are the methods in Java that can be called `without` creating an object of a class.
+    - Statis methods ara called easily, in other words.
     - ![img_2.png](img_2.png)
 - **void**
     - 'void' means that this method does not have a return value.
+    - It does not give an outcome, nor delivers a response.
     - ![img_3.png](img_3.png)
 - **name of the method**
-    - The 'method' need a name, followed by round brackets '()' the parameters. By Sintax.
+    - Every 'method' needs a name followed by round brackets '()' to hold the parameters, if any.
+    - If not, the round brackets remain empty.
     - ![img_4.png](img_4.png)
 - **method body**
   - Actual code, in this case a PRINT to console.
   - ![img_5.png](img_5.png)
 
-Note that there is no RUN bottom next to this method, like we have next to our 'main' method.
+> Note that there is no RUN bottom next to this method, like we have next to our 'main' method.
 
-We cannot just run it directly.
+We cannot just run it directly. We need to RUN the method that is calling it (instantiating).
 When we run this class `main` method will be executed.
 
 Now, let's call this method **_from_** the `main` method. So all we have to do it just type the name of our method, which is 
@@ -114,13 +117,17 @@ So `helloWorld` with open close brackets and semicolon '**;**' at the end.
 
 That's how we call our method.
 
+![img_7.png](img_7.png)
+
 Now, we can run it as much as many times it's called, or instantiated.
 
 ![img_1.png](img_1.png)
 
 These lines were printed, since these methods were executed from the methods called.
 
-### Java PARAMETERS (Arguments, or Variables of that Method)
+---
+
+### 30 - Java PARAMETERS (Arguments, or Variables of that Method)
 
 `JavaMethodsFull`
 
@@ -141,9 +148,9 @@ public class JavaMethodsFull {
     }
 }
 ````
+---   
 
-
-### Method overloading
+### 31 - Method overloading
 
 `JavaMethodsFull`
 
@@ -180,9 +187,10 @@ private static void suma(double a, double b){
 ---
 
 
-There's another level of complexity: `OVERRIDE`
+> There's another level of complexity: `OVERRIDE`
 
-If a method is present in both SuperClass and ChildClass, and happens to share both Name & Arguments, then:
+If a method is present in both SuperClass and ChildClass, and happens to share both Name & Arguments, but different 
+code inside then:
 
 > Which method will be executed?
 
@@ -197,12 +205,9 @@ For more info about this, refer to:
 https://www.digitalocean.com/community/tutorials/overriding-vs-overloading-in-java#comparing-overriding-and-overloading 
 
 
-
-
-### Method RETURN type
+### 32 - Method RETURN type
 
 `JavaMethodsFull`
-
 
 Currently, all our methods have a 'void' keyword in the method signature, which means they do not return anything.
 
@@ -224,4 +229,4 @@ public class JavaMethodsFull {
 }
 ````
 
-- Instead of `VOID`, now we declare the outcome as `INT` data type.
+- Now, after STATIC instead of `VOID` and before the method NAME, we define there's an outcome of data type `INT`.

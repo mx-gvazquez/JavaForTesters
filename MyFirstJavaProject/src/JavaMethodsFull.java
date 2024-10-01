@@ -3,17 +3,21 @@ package MyFirstJavaProject.src;
 public class JavaMethodsFull {
 
     public static void main(String[] args) {
+        System.out.println("------------------------------------------------------");
         helloWorld();
         name();
         printHello("German");
+        printHello("Gustavo");
+        printHello("Antonio");
         suma((byte) 5, (byte) 6);
         suma((byte) 7, (byte) 7);
         age("German", (byte) 38);
-        age("Alexandra", (byte) 36);
+        age("Alexandra", 36); //Tipo 'Int' consume mas memoria, pero es mas sencillo de implementar.
         suma(3,3);
         suma(3,6,9);
         suma(3.5,7.3);
-        System.out.println(square(4));
+        System.out.println(square(11));
+        System.out.println("------------------------------------------------------");
     }
 
     private static void helloWorld(){
@@ -21,7 +25,7 @@ public class JavaMethodsFull {
     }
 
     private static void name(){
-        System.out.println("Hello, Dmittry!");
+        System.out.println("Hello, Dmitry!");
     }
 
     private static void printHello(String name){
@@ -50,6 +54,11 @@ public class JavaMethodsFull {
     }
 
     private static void age(String name, byte years){
+        System.out.println(name + " is " + years + " years old.");
+    }
+
+
+    private static void age(String name, int years){
         System.out.println(name + " is " + years + " years old.");
     }
 

@@ -1,3 +1,4 @@
 # Ignore FOLDER in root.
 .idea/
-MoreJava/
+MoreJava/.idea
+
