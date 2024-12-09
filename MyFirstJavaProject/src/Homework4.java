@@ -11,11 +11,11 @@ public class Homework4 {
         byte i = 0;
         while (i < str.length()) {
             char x = str.charAt(i);
-                if (x == 'o') {
-                    newStr = newStr + 0;
-                } else {
-                    newStr = newStr + x;
-                }
+            if (x == 'o') {
+                newStr = newStr + 0;
+            } else {
+                newStr = newStr + x;
+            }
             i++;
         }
 

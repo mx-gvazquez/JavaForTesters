@@ -22,7 +22,7 @@ public class MapsDemo {
         System.out.println("All pairs: " + age.entrySet()); //Pair 'Key - Value'
         System.out.println("- - - - - - - ");
 //Change values of a key.
-        age.replace("Dmitry",34);
+        age.replace("Dmitry", 34);
         System.out.println(age);
         System.out.println("- - - - - - - ");
 //Remove pair
@@ -33,7 +33,7 @@ public class MapsDemo {
 
 // Iterator
         Iterator iterator = age.entrySet().iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             System.out.println("Entry set: " + iterator.next());
         }
 
@@ -47,18 +47,17 @@ public class MapsDemo {
 
 //Access Key & Value separately.
         Iterator<Map.Entry<String, Integer>> iterator2 = age.entrySet().iterator();
-        while (iterator2.hasNext()){
+        while (iterator2.hasNext()) {
             Map.Entry<String, Integer> entry = iterator2.next();
             System.out.println("Key: " + entry.getKey());
             System.out.println("Value: " + entry.getValue());
         }
         System.out.println("- - - - - - - Easier way");
 
-        for (Map.Entry<String, Integer> entry : age.entrySet()){
+        for (Map.Entry<String, Integer> entry : age.entrySet()) {
             System.out.println("Key: " + entry.getKey());
             System.out.println("Value: " + entry.getValue());
         }
-
 
 
     }

@@ -15,7 +15,7 @@ public class Homework3 {
 
         System.out.println("---------------");
 
-        for (int i = 50; i >= 0 ; i -= 5) {
+        for (int i = 50; i >= 0; i -= 5) {
             System.out.println(i);
         }
 

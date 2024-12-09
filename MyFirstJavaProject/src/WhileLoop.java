@@ -3,16 +3,16 @@ package MyFirstJavaProject.src;
 public class WhileLoop {
     public static void main(String[] args) {
 
-    // WHILE
+        // WHILE
         byte i = 0;
-        while (i < 5){
+        while (i < 5) {
             System.out.println(i);
             i++; // Break condition, to avoid infinite Loop.
         }
 
         System.out.println("---------------");
 
-    //DO WHILE
+        //DO WHILE
         do {
             System.out.println(i);
             i--;

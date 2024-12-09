@@ -10,10 +10,11 @@ public class JavaMethods1 {
         name();
     }
 
-    private static void helloWorld(){
+    private static void helloWorld() {
         System.out.println("Hello, World!");
     }
-    private static void name(){
+
+    private static void name() {
         System.out.println("Hello, German!");
     }
 

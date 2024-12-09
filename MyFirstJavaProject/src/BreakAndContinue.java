@@ -3,7 +3,7 @@ package MyFirstJavaProject.src;
 public class BreakAndContinue {
     public static void main(String[] args) {
 
-    // BREAK
+        // BREAK
         byte pages = 12;
         for (byte j = 0; j <= pages; j++) {
             System.out.println(j); // Now we run through all 0 to 'pages'.
@@ -15,18 +15,18 @@ public class BreakAndContinue {
         }
 
 
-    System.out.println("---------------");
+        System.out.println("---------------");
 
 
-    //CONTINUE
+        //CONTINUE
         //DO WHILE
 
         do {
-            if (pages == 8){
+            if (pages == 8) {
                 System.out.println("No imprimas el número: " + pages + " por que me cae mal.");
                 pages--;    // Make sure to add the counter, to avoid infinite loop.
-                            // Otherwise variable 'pages' don't update and will skip the counter
-                            // and return here forever.
+                // Otherwise variable 'pages' don't update and will skip the counter
+                // and return here forever.
                 continue;
             }
             System.out.println(pages);

@@ -13,15 +13,15 @@ public class Homework1Sol {
         //Print "Too big" if number is 100 or more
         //Print "Jordan" if number is 100 or more
 */
-        if (x < 0){
+        if (x < 0) {
             System.out.println("Negative");
-        } else if (x == 0){
+        } else if (x == 0) {
             System.out.println("Zero");
-        } else if (x <= 10){
+        } else if (x <= 10) {
             System.out.println("Small");
-        } else if (x != 23 && x < 100){
+        } else if (x != 23 && x < 100) {
             System.out.println("Less than 100");
-        } else if (x == 23){
+        } else if (x == 23) {
             System.out.println("Jordan");
         } else {
             System.out.println("Too big");

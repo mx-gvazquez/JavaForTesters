@@ -38,13 +38,13 @@ public class ListOfMaps {
 
         //Print only First and Last names of students, with grade A.
 
-        for (HashMap<String, String> alumn : students){
-        String grade = alumn.get("grade");
-        if (grade.equals("A")){
-            String first = alumn.get("firstName");
-            String last = alumn.get("lastName");
-            System.out.println("Student " + first + " " + last + " got an A");
-        }
+        for (HashMap<String, String> alumn : students) {
+            String grade = alumn.get("grade");
+            if (grade.equals("A")) {
+                String first = alumn.get("firstName");
+                String last = alumn.get("lastName");
+                System.out.println("Student " + first + " " + last + " got an A");
+            }
 
 
         }

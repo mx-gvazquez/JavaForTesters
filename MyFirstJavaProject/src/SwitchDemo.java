@@ -3,7 +3,7 @@ package MyFirstJavaProject.src;
 public class SwitchDemo {
     public static void main(String[] args) {
         int mes = 14;
-        switch (mes){
+        switch (mes) {
             case 1:
                 System.out.println("Enero");
                 break;

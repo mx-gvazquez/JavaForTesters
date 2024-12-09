@@ -42,7 +42,7 @@ public class ArrayListDemo {
         System.out.println("Is empty: " + outList.isEmpty());
 //Print the Array as List
         System.out.println("- - - - - - - ");
-        for (String value : outList){
+        for (String value : outList) {
             System.out.println(value);
         }
 

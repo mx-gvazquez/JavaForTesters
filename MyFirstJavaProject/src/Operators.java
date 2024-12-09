@@ -3,7 +3,7 @@ package MyFirstJavaProject.src;
 public class Operators {
     public static void main(String[] args) {
 
-    //Arithmetical Operators
+        //Arithmetical Operators
         int a = 100;
         int b = 50;
 
@@ -25,10 +25,10 @@ public class Operators {
         System.out.println(--b); //Decremental - 47
 
 
-    //Assignment Operators
+        //Assignment Operators
         int c = 10;
 
-    //c = c+3;
+        //c = c+3;
         c += 3;  // Nueva sintaxis de adición.
         System.out.println(c); // Print c = 10 + 3
 
@@ -56,9 +56,9 @@ public class Operators {
         System.out.println("Logical Operators");
 
         //System.out.println(3 > 2);
-        System.out.println(3 > 2 && 10<15); // AND Logical operator - True AND True = True
-        System.out.println(3 > 2 && 10<9); // AND Logical operator - True AND False = False
-        System.out.println(3 > 2 || 10<9); // AND Logical operator - True OR False = False
+        System.out.println(3 > 2 && 10 < 15); // AND Logical operator - True AND True = True
+        System.out.println(3 > 2 && 10 < 9); // AND Logical operator - True AND False = False
+        System.out.println(3 > 2 || 10 < 9); // AND Logical operator - True OR False = False
 
 
     }

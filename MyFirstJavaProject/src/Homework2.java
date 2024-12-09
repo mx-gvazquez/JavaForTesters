@@ -2,9 +2,9 @@ package MyFirstJavaProject.src;
 
 public class Homework2 {
     public static void main(String[] args) {
-    // Using Switch statement, print day of the week, depending on a dat number from 1 to 7.
+        // Using Switch statement, print day of the week, depending on a dat number from 1 to 7.
         byte dia = 8;
-        switch (dia){
+        switch (dia) {
             case 1:
                 System.out.println("Lunes");
                 break;
