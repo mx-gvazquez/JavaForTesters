@@ -14,7 +14,7 @@ public class Dog  extends Animal{
     @Override
     public void sleep(){
         super.sleep(); //
-        System.out.println("Dog is sleeping.... zzzzz");
+        System.out.println("Child Dog is sleeping.... zzzzz");
     }
 
     public void goodBoy(){

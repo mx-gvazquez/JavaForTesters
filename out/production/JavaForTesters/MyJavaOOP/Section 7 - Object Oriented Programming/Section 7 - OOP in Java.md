@@ -449,7 +449,7 @@ As the rule of thumb, I suggest making everything `private` when you create that
          */
 ---
 `Programming.java`
-
+```java
     public class Programming {
     
     //Class attributes
@@ -478,13 +478,17 @@ As the rule of thumb, I suggest making everything `private` when you create that
         }
     
     }
+```
+
 
 `Main1.java`
+```java
 
         Programming programming = new Programming("Java");  // Use this `Programming` class to create an instance named `programming` in `Main1` class.
         programming.learningStatus();
         programming.learningComplete();
         programming.learningStatus();
+```
 ---
 
 ### Class 40 -  'Static' Keyword
@@ -511,7 +515,7 @@ The static keyword belongs to the `class` rather than an `instance` of the class
 
 As you see, `text` is static, `number`, is not.
 
-
+```java
 
     public class ClassDemo {
         public int number = 5; // Not 'static', can be different value inside INSTANCES.
@@ -526,9 +530,9 @@ As you see, `text` is static, `number`, is not.
             }
 
     }
-
+```
 ---
-
+```java
     public class Main1 {
 
       public static void main(String[] args) {
@@ -551,7 +555,7 @@ As you see, `text` is static, `number`, is not.
       }
     
     }
-
+```
 So when we created the class, we can change the `number` for each instance.
 
 But this `text` variable is part of the class, is **not** part of the instance.
@@ -579,30 +583,32 @@ Also `static method` can access `static data member` and can change the value of
 #### BEFORE
 
 ClassDemo.java
-
+```java
     public void printText(){   // PUBLIC
         System.out.println("The text is " + text);
     }
-
+```
 Main1.java
-
+```java
     instancia.printText();
-
+```
 #### AFTER
 
 ClassDemo.java
-
+```java
     public static void printText(){   // PUBLIC
         System.out.println("The text is " + text);
     }
-
+```
 Main1.java
-
+```java
     ClassDemo.printText();
-
+```
 We can use instances to access static methods like we did here to access static variables or because this method is static we can call it directly from the class.
 
-### Four pillars of OOP
+
+---
+### Four pillars of OOP (41)
 Main1 four principles of Object-Oriented-Programming
 
 #### Basic elements
@@ -694,7 +700,7 @@ Access modifiers are mainly used for `encapsulation`.     (881)
 
 
 
-#### Encapsulation
+### Encapsulation (42)
 
 `Cat.java`
 `Main2.java`
@@ -702,7 +708,6 @@ Access modifiers are mainly used for `encapsulation`.     (881)
 The meaning of encapsulation is to make sure that sensitive data is hidden from users.
 
 To achieve this, you must declare class variables attributes as `private`.
-
 
 Use this `Cat` class to create an instance of `cat` in `Main2` class.
 
@@ -717,13 +722,13 @@ you only use this `set methods`.
 
 This increases security of data.
 
-#### Abstraction
+### Abstraction (43)
 Data Abstraction is the process of hiding certain details and showing only essential information to the user.
 
 Abstraction can be achieved with either Abstract Classes or interfaces. Let's use abstract Class in this example.
 
 `Animal.java`
-
+````java
     abstract class Animal {
     
       abstract void makeSound(); //Abstract methods don't have a body.
@@ -731,9 +736,8 @@ Abstraction can be achieved with either Abstract Classes or interfaces. Let's us
       public void sleep(){
           System.out.println("Sleeping ...... zzzzz");
       }
-    
     }
-
+````
 The abstract keyword is a NON access modifier used for classes and methods.
 
 Abstract class is the restricted class that cannot be used to create objects to access. It must be inherited from another class.
@@ -750,7 +754,7 @@ We cannot create `objects` from the abstract class.
 
 We must `inherit` from this class and implement abstract methods in this subclass.
 
-#### Inheritance
+### Inheritance (44)
 
 It is possible to inherit `attributes and methods` from one class to another when it comes to `inheritance`.
 
@@ -773,19 +777,18 @@ So hover over the error and select this implement methods link.
 So just click on it, `makeSound()`.
 
 This added an empty `makeSound()` method to our class `Cat` with this annotation `Override`.
-
+````java
     @Override
     void makeSound() {
-
     }
-
+````
 We add a simple action:
-
+````java
     @Override
     void makeSound() {
         System.out.println("Miau!");
     }
-
+````
 Switch back to `Main2` method.
 
 Since our `Cat` class (already instanced in `Main2`) extends `Animal` class, we can use `cat` instance here.
@@ -797,7 +800,7 @@ Since our `Cat` class (already instanced in `Main2`) extends `Animal` class, we 
 - And we can use `Super Class` method `sleep()` because `Cat` class inherits this method from the `Parent` class `Animal`.
 - We can use all public methods inside the `Animal` class.
 
-#### Polymorphism
+### Polymorphism (45)
 
 `Polymorphism` means many forms, and it occurs when we have many
 classes that are related to each other by `inheritance`.
@@ -820,12 +823,12 @@ in order to invoke the `makeSound()` abstract method from `Animal` class.
 
 The source routing follows:
 
-`Abstract method > Abstract Class > Class inheritance and Method implementation > Instancing Objects in Main1 Class`
+`Abstract method > Abstract Class > Class inheritance and Method implementation > Instancing Objects in 'Main2' Class`
 
 `makeSound() > Animal > Dog & CAT > Main2`
 
 `Dog.java`
-
+````java
     public class Dog  extends Animal{
     
         @Override
@@ -833,14 +836,14 @@ The source routing follows:
             System.out.println("Guau!");
         }
     }
-
+````
 `Main2`
-
+````java
         Dog dog = new Dog();
         dog.makeSound();
         dog.sleep();
-
-### Overriding
+````
+### Overriding (46)
 
 Let's talk about overriding today.
 
@@ -856,12 +859,12 @@ In `Main2` class, we're instancing `Cat` and `Dog` class with `makeSound()` abst
 
 The moment we inherit abstract class `Animal`, IntelliJ shows an error with a MUST include this, and automatically
 applies the tag `@Override`.
-
+````java
     @Override
     void makeSound() {
         System.out.println("Miau!");
     }
-
+````
 
 `BEFORE`
 
@@ -877,22 +880,22 @@ We also can `@Override` regular methods inside an abstract class and make it ind
 In `Dog` class we did this:
 
 `bad - Dog`
-
+````java
     public void sleep(){
         System.out.println("Dog is sleeping.... zzzzz");
     }
-
+````
 But IntelliJ is perfectible; it only shows a message alert, it doesn't apply the tag.
 
 We need to add it manually.
 
 `good - Dog`
-
+````java
     @Override  // <<<< Good Practice
     public void sleep(){
         System.out.println("Dog is sleeping.... zzzzz");
     }
-
+````
 
 
 `AFTER`
@@ -902,7 +905,7 @@ We need to add it manually.
     Guau!
     Dog is sleeping.... zzzzz
 
-### 'Super' Keywords
+### 'Super' Keywords (47)
 
 The `super` keyword in Java is used in `subclasses` to
 access `super class` members:
@@ -927,7 +930,7 @@ Similar to the case when we have a Class variable and a method constructor param
 keyword to refer CLASS variable instead of method variable.
 
 `Programming.java`
-
+````java
     public class Programming {
     
     //Class attributes
@@ -936,10 +939,12 @@ keyword to refer CLASS variable instead of method variable.
     
     // Constructor
       public Programming(String language){   // Constructor Parameter AND Class level variable are both Strings and have the same name (language).
-    this.language = language;                // 'this'. refers to the class level variable (private), NOT the constructor parameter.
+    this.language = language;                // 'this'. refers to the CLASS LEVEL variable (private), NOT the constructor parameter.
                                              // 'this.' is used to eliminate confusion between class attributes and parameters with the same name.
       }   
     }
+````
+    
 ---
 
 In the last lecture, we have overridden `sleep` method.
@@ -950,7 +955,7 @@ using Dog `instance`.
 But sometimes we need the method of the parent (super) class to be executed.
 
 To do so, we can use `super` Keyword.
-
+````java
     public class Dog  extends Animal{    
     
         @Override
@@ -961,7 +966,7 @@ To do so, we can use `super` Keyword.
             System.out.println("Dog is sleeping.... zzzzz");
         }    
     }
-
+````
 First, this `sleep` from `Animal` superclass will be executed and then
 
 `Dog` override `sleep` method message will be printed.

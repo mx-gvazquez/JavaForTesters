@@ -28,7 +28,7 @@ abstract class Animal {
     abstract void makeSound(); //Abstract methods don't have a body.
 
     public void sleep(){
-        System.out.println("Sleeping ...... zzzzz");
+        System.out.println("Super Animal is Sleeping ...... zzzzz");
     }
 
 }
