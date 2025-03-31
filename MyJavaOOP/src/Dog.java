@@ -1,4 +1,4 @@
-package MyJavaOOP.src;
+
 
 public class Dog  extends Animal{
 

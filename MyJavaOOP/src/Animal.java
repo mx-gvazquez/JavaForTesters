@@ -1,4 +1,4 @@
-package MyJavaOOP.src;
+
 
 abstract class Animal {
 

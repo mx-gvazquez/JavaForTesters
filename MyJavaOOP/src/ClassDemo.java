@@ -1,4 +1,4 @@
-package MyJavaOOP.src;
+
 
 public class ClassDemo {
         public int number = 5; // Not 'static', can be different value inside INSTANCES.

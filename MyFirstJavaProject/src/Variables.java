@@ -1,4 +1,3 @@
-package MyFirstJavaProject.src;
 
 public class Variables {
 

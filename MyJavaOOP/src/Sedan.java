@@ -1,4 +1,4 @@
-package MyJavaOOP.src;
+
 
 public class Sedan extends Car{
     public Sedan(String make, String model, int miles, int price) {

@@ -1,4 +1,4 @@
-package MyJavaOOP.src;
+
 
 public class LampPrivate {
     private boolean lightStatus = false; //NOT accesible from outside this class.

@@ -1,4 +1,4 @@
-package MyJavaOOP.src;
+
 
 public class InterfaceDemo implements A, B {
 

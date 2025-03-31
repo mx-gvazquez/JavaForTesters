@@ -1,4 +1,4 @@
-package MyJavaOOP.src;
+
 
 public class Coupe extends Car{
     public Coupe(String make, String model, int miles, int price) {

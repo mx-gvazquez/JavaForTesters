@@ -1,4 +1,4 @@
-package MyJavaOOP.src;
+
 
 public class Cat extends Animal{
 

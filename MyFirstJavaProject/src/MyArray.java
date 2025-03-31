@@ -1,4 +1,4 @@
-package MyFirstJavaProject.src;
+
 
 public class MyArray {
     public static void main(String[] args) {

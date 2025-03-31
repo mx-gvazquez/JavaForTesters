@@ -1,4 +1,4 @@
-package MyFirstJavaProject.src;
+
 
 public class Homework4 {
     public static void main(String[] args) {

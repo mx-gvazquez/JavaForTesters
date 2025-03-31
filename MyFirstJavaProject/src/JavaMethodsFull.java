@@ -1,4 +1,4 @@
-package MyFirstJavaProject.src;
+
 
 public class JavaMethodsFull {
 
